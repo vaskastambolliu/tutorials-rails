@@ -1,0 +1,25 @@
+PERSON: id emer mbiemer mosha adresa carID
+car: 	id ngjur 	 marka
+
+
+person
+1	vaska	stomballiu	30	vlore	1
+2 	erinda	jaupaj		27	vlore	4
+
+car
+1	black	audi
+4	red		benz
+
+select *
+from person join car on person.carid = car.id
+
+select *
+from person, car
+where person.id = car.id
+
+person.id 	person.emer person.mbiemer	person.mosha	person.carid 	car.ngjyr	car.marka
+1			vaska		stomballiu 		30 				1 				black		audi
+
+
+select car.marka from person join car  on person.carid=car.id
+where person.emer='vaska' and person.mbiemer='stambolliu'
